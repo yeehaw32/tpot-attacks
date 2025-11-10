@@ -135,7 +135,7 @@ def simulate_attack(config, profile="basic"):
             config["ip"],
             port=config["port"],
             username=config["username"],
-            password="password123",
+            password="password",
             timeout=10
         )
         client1.close()
