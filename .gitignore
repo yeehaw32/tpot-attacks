@@ -1,0 +1,4 @@
+/artifacts/
+/root/tpot-test/
+/*.log
+*.pcap
