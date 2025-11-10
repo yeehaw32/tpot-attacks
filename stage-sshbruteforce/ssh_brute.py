@@ -15,7 +15,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = REPO_ROOT / "config.yml"
 
 # Script-specific defaults (not pulled from config)
-DEFAULT_USERNAME = "root"
+DEFAULT_USERNAME = "admin"
 DEFAULT_PORT = 22
 
 # Fake, harmless malware URLs (will not resolve or execute)
@@ -152,7 +152,7 @@ def simulate_attack(config, profile="basic"):
             config["ip"],
             port=config["port"],
             username=config["username"],
-            password="password123",
+            password="letmein",
             timeout=10
         )
         print(f"[+] Second login 'successful' – running '{profile}' post-exploit commands...")
