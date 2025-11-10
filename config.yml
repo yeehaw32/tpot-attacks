@@ -1,15 +1,12 @@
-# config.yml - central settings used by scripts
 targets:
   - 10.20.20.10
 
-# scanning defaults
 nmap:
-  top_ports: 200
-  syn_delay: "200ms"
-  min_rate: 20
+  top_ports: 1000
+  syn_delay: "100ms"
+  min_rate: 50
   slow_scan_delay_ms: 500
 
-# general runtime/behaviour
 dry_run: false
 output_base: "/root/tpot-test"
 log_retention_days: 7
