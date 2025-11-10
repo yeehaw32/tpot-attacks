@@ -8,5 +8,5 @@ nmap:
   slow_scan_delay_ms: 500
 
 dry_run: false
-output_base: "/root/tpot-test"
+output_base: "/bertil/tpot-test"
 log_retention_days: 7

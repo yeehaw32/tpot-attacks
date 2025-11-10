@@ -11,7 +11,7 @@ if [ -f "${REPO_ROOT}/lib/common.sh" ]; then
   # shellcheck source=/dev/null
   source "${REPO_ROOT}/lib/common.sh"
 else
-  OUTPUT_BASE="$(awk -F': ' '/^output_base:/{print $2; exit}' "$CONFIG" 2>/dev/null || echo "/root/tpot-test")"
+  OUTPUT_BASE="$(awk -F': ' '/^output_base:/{print $2; exit}' "$CONFIG" 2>/dev/null || echo "/bertil/tpot-test")"
   DRY_RUN_DEFAULT="$(awk -F': ' '/^dry_run:/{print $2; exit}' "$CONFIG" 2>/dev/null || echo "false")"
   DRY_RUN="${DRY_RUN:-$DRY_RUN_DEFAULT}"
   timestamp(){ date +%F_%H%M%S; }
