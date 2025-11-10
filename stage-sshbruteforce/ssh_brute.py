@@ -152,7 +152,7 @@ def simulate_attack(config, profile="basic"):
             config["ip"],
             port=config["port"],
             username=config["username"],
-            password="letmein",
+            password="password123",
             timeout=10
         )
         print(f"[+] Second login 'successful' – running '{profile}' post-exploit commands...")
