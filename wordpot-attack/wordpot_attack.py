@@ -14,7 +14,7 @@ from pathlib import Path
 from datetime import datetime
 
 
-def load_config(config_path="config.yaml"):
+def load_config(config_path="config.yml"):
     """Load config.yaml from repo root."""
     try:
         with open(config_path, 'r') as f:
