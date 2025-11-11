@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 from smb.SMBConnection import SMBConnection
 
-def load_config(config_path="config.yaml"):
+def load_config(config_path="config.yml"):
     with open(config_path) as f:
         return yaml.safe_load(f)
 
