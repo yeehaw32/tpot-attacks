@@ -2,3 +2,4 @@
 /root/tpot-test/
 /*.log
 *.pcap
+.venvpi
