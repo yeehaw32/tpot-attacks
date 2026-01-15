@@ -49,8 +49,6 @@ echo "Recon-only run for ${TARGET} -> ${OUTDIR}" | tee "$LOGFILE"
 
 check_tools || { echo "Install required tools (nmap, curl, awk, grep, sed, timeout) and retry."; exit 1; }
 
-# 🔑 HONEYPOT PORTS: Fixed list to ensure coverage
-# Cowrie: 22,23 | Dionaea: 21,25,80,135,139,445,1433,3306,5060 | Wordpot: 80,8080 | Elasticpot: 9200
 HONEYPOT_PORTS="21,22,23,25,80,110,135,139,445,1433,3306,5060,8080,9200"
 PORTS="$HONEYPOT_PORTS"
 
